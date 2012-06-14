@@ -1,0 +1,35 @@
+﻿@using System.Web.Mvc
+@helper FlashMessage(TempDataDictionary tempData){
+    var message = "";
+    var className = "";
+
+    if (tempData["error"] != null)
+    {
+      message = tempData["error"].ToString();
+      className = "flashError";
+    }
+    else if (tempData["warning"] != null)
+    {
+      message = tempData["warning"].ToString();
+      className = "flashWarning";
+    } 
+    else if (tempData["info"] != null)
+    {
+        message = tempData["info"].ToString();
+        className = "flashInfo";
+    }
+    
+
+    if (!String.IsNullOrEmpty(message))
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#flash').html('@message' + '<a class="close" href="#">×</a>');
+                $('#flash').toggleClass('@className');
+                $('#flash').slideDown('slow');
+                $('#flash').delay(5000).slideUp('slow');
+                $('#flash').click(function () { $('#flash').toggle('highlight'); });
+            });
+        </script>
+    }
+}

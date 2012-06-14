@@ -1,0 +1,45 @@
+﻿.info, .flashInfo
+{
+    background-color: #CCFFCC;
+    border-top: 1px solid #FFCC66;
+    border-bottom: 4px solid #FFCC66;
+    padding: 6px;
+    font-family: helvetica;
+    font-size: 1.1em;
+    text-align: center;
+    border-top-color: #006600;
+    border-bottom-color: #006600;
+    font-weight: bold;
+    color: #339933;
+    cursor:pointer;
+}
+.warning, .flashWarning
+{
+    background-color: #FFFF99;
+    border-top: 1px solid #FFCC66;
+    border-bottom: 4px solid #FFCC66;
+    padding: 6px;
+    font-family: helvetica;
+    font-size: 0.9em;
+    text-align: center;
+    border-top-color: #CC9900;
+    border-bottom-color: #CC9900;
+    font-weight: bold;
+    color: #663300;
+    cursor:pointer;
+}
+.error, .flashError
+{
+    background-color: #FFCC99;
+    border-top: 1px solid #FFCC66;
+    border-bottom: 4px solid #FFCC66;
+    padding: 4px;
+    font-family: helvetica;
+    font-size: 1.1em;
+    text-align: center;
+    border-top-color: #800000;
+    border-bottom-color: #800000;
+    font-weight: bold;
+    color: #990000;
+    cursor:pointer;
+}
